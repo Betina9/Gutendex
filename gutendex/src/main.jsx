@@ -6,6 +6,7 @@ import "./index.css";
 import App from "./App.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import HomePage from "./pages/Homepage.jsx";
+import ProductPage from "./pages/ProductPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/products/:productId",
+        element: <ProductPage />,
       },
     ],
   },
