@@ -5,6 +5,7 @@ import "./index.css";
 //Router components
 import App from "./App.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
+import HomePage from "./pages/Homepage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,15 @@ const router = createBrowserRouter([
     errorElement: <p>Error</p>,
     children: [
       {
+        index: true,
+        element: <HomePage />,
+      },
+      {
         path: "/about",
         element: <AboutPage />,
+      },
+      {
+        path: "/products/:productId",
       },
     ],
   },
