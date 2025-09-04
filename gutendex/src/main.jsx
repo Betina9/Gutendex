@@ -4,14 +4,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 //Router components
 import App from "./App.jsx";
-import "./About.jsx";
-import About from "./About.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <p>Error</p>,
+    children: [
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
+    ],
   },
   {
     path: "*",
