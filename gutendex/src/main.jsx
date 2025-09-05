@@ -6,7 +6,8 @@ import "./index.css";
 import App from "./App.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import HomePage from "./pages/Homepage.jsx";
-import ProductPage from "./pages/ProductPage.jsx";
+import BookPage from "./pages/BookPage.jsx";
+import ProductsPage from "./pages/BooksPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,12 @@ const router = createBrowserRouter([
         element: <AboutPage />,
       },
       {
-        path: "/products/:productId",
-        element: <ProductPage />,
+        path: "/books",
+        element: <ProductsPage />,
+      },
+      {
+        path: "/books/:bookId",
+        element: <BookPage />,
       },
     ],
   },
