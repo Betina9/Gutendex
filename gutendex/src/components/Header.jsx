@@ -20,6 +20,7 @@ export default function Header() {
         <Link to="/">Tragedy</Link>
         <Link to="/">War</Link>
         <Link to="/">Philosophy</Link>
+        <Link to="/">Favorits</Link>
       </nav>
     </header>
   );
